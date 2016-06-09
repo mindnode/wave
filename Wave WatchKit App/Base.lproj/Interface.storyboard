@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--background-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="background" contentMode="scaleAspectFill" animationDuration="100" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Wave_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="151" alignment="left" id="vY7-Gh-gPf">
+                            <items>
+                                <group width="1" alignment="left" id="7l7-6s-Yhx">
+                                    <items>
+                                        <group width="53" height="1" alignment="left" id="hqO-yi-H2L"/>
+                                        <group width="80" height="1" alignment="left" layout="vertical" id="TPY-fp-s6s">
+                                            <items>
+                                                <group width="1" height="20" alignment="left" id="HA0-uc-JZE"/>
+                                                <group width="1" height="36" alignment="left" id="xIB-mI-FUO">
+                                                    <items>
+                                                        <group width="38" alignment="left" id="ZUl-Zq-3Sb"/>
+                                                        <button width="29" height="30" alignment="left" backgroundImage="reload" id="M6N-i9-jV5">
+                                                            <connections>
+                                                                <action selector="onBtnReloadTouched" destination="AgC-eL-Hgc" id="JP7-Uk-CtJ"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="1" height="35" alignment="left" layout="vertical" id="vcO-bn-zTD">
+                                                    <items>
+                                                        <label width="100" height="15" alignment="right" text="wave" textAlignment="left" id="R21-gE-1uj">
+                                                            <color key="textColor" red="1" green="0.76364092436147701" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                        </label>
+                                                        <label alignment="left" text="Reload" id="Q0Q-O8-SHa">
+                                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                        </label>
+                                                    </items>
+                                                </group>
+                                                <group width="100" height="20" alignment="left" id="V0J-lq-b3n"/>
+                                                <group width="1" height="30" alignment="left" id="z22-EI-Hni">
+                                                    <items>
+                                                        <group width="11" alignment="left" id="o4N-Ri-nzi"/>
+                                                        <imageView width="10" height="16" alignment="right" image="hourglass" contentMode="scaleAspectFit" id="8XU-iI-5Yq"/>
+                                                        <label width="52" height="13.5" alignment="right" text="18:39" textAlignment="left" id="Wpa-20-Dgm">
+                                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                        </label>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="151" alignment="left" layout="vertical" id="R1A-QG-sWE">
+                            <items>
+                                <map height="153" alignment="center" isAccessibilityElement="YES" accessibilityLabel="Fishing Map" id="nFK-5c-TSH">
+                                    <accessibilityTraits key="accessibilityTraits" image="YES" playsSound="YES" keyboardKey="YES"/>
+                                </map>
+                            </items>
+                        </group>
+                        <group width="1" height="154" alignment="left" id="wWJ-IF-H3u">
+                            <items>
+                                <table alignment="left" id="fNy-PP-vOl">
+                                    <items>
+                                        <tableRow identifier="WeatherRowController" id="OP5-wy-FaL" customClass="WeatherRowController" customModule="Wave_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="4Zc-LJ-uBN">
+                                                <items>
+                                                    <separator height="1" alignment="left" id="1xO-sw-Mib">
+                                                        <color key="color" red="1" green="0.0" blue="0.43844939710000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </separator>
+                                                    <group width="114" height="36" alignment="left" layout="vertical" spacing="0.0" id="0mS-BX-Hyl">
+                                                        <items>
+                                                            <group width="1" height="20" alignment="left" id="bdc-qc-8oy">
+                                                                <items>
+                                                                    <label width="38.5" alignment="left" text="03:00" id="Xxe-jd-6Xx">
+                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                    </label>
+                                                                    <label width="77" alignment="left" text="Clear" id="q3y-QW-LU0">
+                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                    </label>
+                                                                </items>
+                                                            </group>
+                                                            <group width="1" alignment="left" id="eyK-AZ-WaQ">
+                                                                <items>
+                                                                    <label width="50" alignment="left" text="0 'c" id="Vli-pm-2Jj">
+                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                    </label>
+                                                                    <label width="42.5" alignment="left" text="wind" id="6uX-hE-rt4">
+                                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                    </label>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" red="0.15540261243386244" green="0.15540261243386244" blue="0.15540261243386244" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="temperature" destination="Vli-pm-2Jj" id="J5w-1V-Pny"/>
+                                                <outlet property="time" destination="Xxe-jd-6Xx" id="Cmc-Sg-OiM"/>
+                                                <outlet property="title" destination="q3y-QW-LU0" id="rI0-nK-L3Q"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btn_reload" destination="M6N-i9-jV5" id="L1L-q0-TLb"/>
+                        <outlet property="canvas" destination="7l7-6s-Yhx" id="Qae-yr-1fx"/>
+                        <outlet property="map" destination="nFK-5c-TSH" id="joM-KS-72n"/>
+                        <outlet property="messages" destination="Q0Q-O8-SHa" id="H4c-WB-cRR"/>
+                        <outlet property="panel_indicator" destination="hqO-yi-H2L" id="B3q-xL-oAN"/>
+                        <outlet property="region" destination="R21-gE-1uj" id="54v-L6-PaL"/>
+                        <outlet property="remain_time" destination="Wpa-20-Dgm" id="I0m-56-RgK"/>
+                        <outlet property="weather" destination="fNy-PP-vOl" id="VXC-tY-bD2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="69.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Wave_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
